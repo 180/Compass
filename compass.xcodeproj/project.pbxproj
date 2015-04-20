@@ -14,6 +14,7 @@
 		4E100B781AE5A4AF000C5F61 /* compassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E100B771AE5A4AF000C5F61 /* compassTests.m */; };
 		4E100B841AE5A65B000C5F61 /* CompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E100B821AE5A65B000C5F61 /* CompassViewController.m */; };
 		4E100B851AE5A65B000C5F61 /* CompassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E100B831AE5A65B000C5F61 /* CompassViewController.xib */; };
+		4E100B871AE5A9D6000C5F61 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E100B861AE5A9D6000C5F61 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		4E100B811AE5A65B000C5F61 /* CompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassViewController.h; sourceTree = "<group>"; };
 		4E100B821AE5A65B000C5F61 /* CompassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompassViewController.m; sourceTree = "<group>"; };
 		4E100B831AE5A65B000C5F61 /* CompassViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompassViewController.xib; sourceTree = "<group>"; };
+		4E100B861AE5A9D6000C5F61 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E100B871AE5A9D6000C5F61 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		4E100B4F1AE5A4AE000C5F61 = {
 			isa = PBXGroup;
 			children = (
+				4E100B861AE5A9D6000C5F61 /* CoreLocation.framework */,
 				4E100B5A1AE5A4AE000C5F61 /* compass */,
 				4E100B741AE5A4AF000C5F61 /* compassTests */,
 				4E100B591AE5A4AE000C5F61 /* Products */,
