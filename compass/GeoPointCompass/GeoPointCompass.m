@@ -18,6 +18,11 @@ float angle;
 - (id) init {
     self = [super init];
     
+    // Check for iOS 8. Without this guard the code will crash with "unknown selector" on iOS 7.
+    if ([_locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [_locationManager requestWhenInUseAuthorization];
+    }
+    
     if (self) {
         self.locationManager = [[CLLocationManager alloc] init];
         if ([CLLocationManager locationServicesEnabled])
