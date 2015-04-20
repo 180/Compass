@@ -12,11 +12,19 @@
 
 @end
 
-@implementation CompassViewController
+@implementation CompassViewController {
+    CLLocationManager *_locationManager;
+    CLGeocoder *_geocoder;
+    CLPlacemark *_placemark;
+    NSString *_destinationAddress;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    _destinationAddress = @"Gdansk, Długa";
+    [self displayCoordinates];
+    _destinationLabel.text = [NSString stringWithFormat:@"Destination: %@", _destinationAddress];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +32,19 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)displayCoordinates {
+    _geocoder = [[CLGeocoder alloc] init];
+    [_geocoder geocodeAddressString:_destinationAddress completionHandler:^(NSArray *placemarks, NSError *error){
+        
+        for (CLPlacemark *destPlacemark in placemarks){
+            // Process the placemark.
+            NSString *destinationLat = [NSString stringWithFormat:@"%.4f", destPlacemark.location.coordinate.latitude];
+            NSString *destinationLong = [NSString stringWithFormat:@"%.4f", destPlacemark.location.coordinate.longitude];
+            _coordinatesLabel.text = [NSString stringWithFormat:@"Coordinates: %@ %@", destinationLat, destinationLong];
+            
+        }
+    }];
+    
 }
-*/
 
 @end
