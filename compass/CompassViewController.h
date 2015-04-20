@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CompassViewController.h
 //  compass
 //
 //  Created by Maciej Stanik on 20/04/2015.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CompassViewController : UIViewController
 
 @end
-

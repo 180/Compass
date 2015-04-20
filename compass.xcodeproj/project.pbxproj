@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		4E100B5E1AE5A4AE000C5F61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E100B5D1AE5A4AE000C5F61 /* main.m */; };
 		4E100B611AE5A4AF000C5F61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E100B601AE5A4AF000C5F61 /* AppDelegate.m */; };
-		4E100B641AE5A4AF000C5F61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E100B631AE5A4AF000C5F61 /* ViewController.m */; };
-		4E100B671AE5A4AF000C5F61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E100B651AE5A4AF000C5F61 /* Main.storyboard */; };
 		4E100B691AE5A4AF000C5F61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E100B681AE5A4AF000C5F61 /* Images.xcassets */; };
 		4E100B6C1AE5A4AF000C5F61 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E100B6A1AE5A4AF000C5F61 /* LaunchScreen.xib */; };
 		4E100B781AE5A4AF000C5F61 /* compassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E100B771AE5A4AF000C5F61 /* compassTests.m */; };
+		4E100B841AE5A65B000C5F61 /* CompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E100B821AE5A65B000C5F61 /* CompassViewController.m */; };
+		4E100B851AE5A65B000C5F61 /* CompassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E100B831AE5A65B000C5F61 /* CompassViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		4E100B5D1AE5A4AE000C5F61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4E100B5F1AE5A4AE000C5F61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4E100B601AE5A4AF000C5F61 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4E100B621AE5A4AF000C5F61 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4E100B631AE5A4AF000C5F61 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4E100B661AE5A4AF000C5F61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E100B681AE5A4AF000C5F61 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4E100B6B1AE5A4AF000C5F61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4E100B711AE5A4AF000C5F61 /* compassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = compassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E100B761AE5A4AF000C5F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E100B771AE5A4AF000C5F61 /* compassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = compassTests.m; sourceTree = "<group>"; };
+		4E100B811AE5A65B000C5F61 /* CompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassViewController.h; sourceTree = "<group>"; };
+		4E100B821AE5A65B000C5F61 /* CompassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompassViewController.m; sourceTree = "<group>"; };
+		4E100B831AE5A65B000C5F61 /* CompassViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompassViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +83,9 @@
 			children = (
 				4E100B5F1AE5A4AE000C5F61 /* AppDelegate.h */,
 				4E100B601AE5A4AF000C5F61 /* AppDelegate.m */,
-				4E100B621AE5A4AF000C5F61 /* ViewController.h */,
-				4E100B631AE5A4AF000C5F61 /* ViewController.m */,
-				4E100B651AE5A4AF000C5F61 /* Main.storyboard */,
+				4E100B811AE5A65B000C5F61 /* CompassViewController.h */,
+				4E100B821AE5A65B000C5F61 /* CompassViewController.m */,
+				4E100B831AE5A65B000C5F61 /* CompassViewController.xib */,
 				4E100B681AE5A4AF000C5F61 /* Images.xcassets */,
 				4E100B6A1AE5A4AF000C5F61 /* LaunchScreen.xib */,
 				4E100B5B1AE5A4AE000C5F61 /* Supporting Files */,
@@ -199,7 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E100B671AE5A4AF000C5F61 /* Main.storyboard in Resources */,
+				4E100B851AE5A65B000C5F61 /* CompassViewController.xib in Resources */,
 				4E100B6C1AE5A4AF000C5F61 /* LaunchScreen.xib in Resources */,
 				4E100B691AE5A4AF000C5F61 /* Images.xcassets in Resources */,
 			);
@@ -219,9 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E100B641AE5A4AF000C5F61 /* ViewController.m in Sources */,
 				4E100B611AE5A4AF000C5F61 /* AppDelegate.m in Sources */,
 				4E100B5E1AE5A4AE000C5F61 /* main.m in Sources */,
+				4E100B841AE5A65B000C5F61 /* CompassViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +244,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4E100B651AE5A4AF000C5F61 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4E100B661AE5A4AF000C5F61 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4E100B6A1AE5A4AF000C5F61 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
